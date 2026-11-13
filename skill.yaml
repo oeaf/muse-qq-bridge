@@ -1,0 +1,10 @@
+name: local_qq_bridge
+title: Local QQ bridge
+description: 把 QQ 官方机器人（QQ 开放平台/QQ Bot）桥接到 AI Agent：官方 SDK WebSocket 长连接收消息、文件队列、自动唤醒、进程保活、扫码绑定凭证、主人白名单默认拒绝、被动回复限额降级。当用户要求新接、重连、续命、修复、升级或验收 QQ 机器人通道，或让另一个 Agent 按已跑通的流程直接上手 QQ 桥接时使用。已实测范围为 dry-run 冒烟（私聊/群 @ 文字入队、陌生人拦截、被动上限降级、长文切分）；真实 QQ 端到端须每台部署机绑定机器人后按清单验收。入站附件仅记元数据、出站仅 Markdown 文字，附件下载与出站媒体为二期。
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
