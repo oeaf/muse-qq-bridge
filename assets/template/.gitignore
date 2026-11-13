@@ -1,0 +1,7 @@
+node_modules/
+config/credentials.json
+config/config.json
+queue/
+state/
+logs/
+*.tmp
