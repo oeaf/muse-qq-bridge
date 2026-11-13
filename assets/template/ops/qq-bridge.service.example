@@ -1,0 +1,17 @@
+[Unit]
+Description=QQ bot bridge for Muse agent (muse-qq-bridge daemon)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Adjust both paths if the bridge is not deployed at the default location.
+WorkingDirectory=%h/workspace/qq-bridge
+ExecStart=/usr/bin/env node %h/workspace/qq-bridge/bridge/qq-daemon.mjs
+Restart=on-failure
+RestartSec=10
+# Credentials live in config/credentials.json (0600) and are read by the
+# daemon itself. Do NOT put AppSecret, tokens, or proxy URLs in this unit.
+
+[Install]
+WantedBy=default.target
