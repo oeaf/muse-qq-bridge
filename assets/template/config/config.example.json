@@ -1,0 +1,1 @@
+{"chunkLimit":4500,"heartbeatMs":15000,"mergeWindowMs":1500,"outboundPollMs":1000,"passiveReplyLimit":4,"passiveWindowMs":{"c2c":1800000,"group":300000},"proactiveFallback":true,"requireMentionInGroup":true}
